@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<h1>Робота сценарій jQuery утилітів</h1>
+	<button id="contains">.contains()</button>
+	<span id="mes1" style="display: none; font-size: 14px">
+		Перевіряє чи елемент "p" містить в собі "b" і виводить результат
+	</span>
+	<p id="contTest">Текстовий елемент який містить <b>елемент "b"</b></p>
+	<br>
+
+	<button id="data">.data()</button>
+	<p>Введіть якийсь текст</p>
+	<input type="text" id="dataVal">
+		<span id="mes2" style="display: none; font-size: 14px">
+		За допомогою методу data() задає текстовому полю введене значення  значення і виводить на екран
+	</span>
+<br>	
+	<br>
+	<button id="each">.each()</button>
+	<span id="mes3" style="display: none; font-size: 14px">
+		Переберає значення наперед заданого масиву і виводить на екран</span>
+	<br>
+<br>
+	<button id="extend">.extend()</button>
+	<span id="mes4" style="display: none; font-size: 14px">
+		обєднює два обєкта і виводить на екран
+	</span>
+	<br>
+<br>
+	<button id="fnextend">.fn.extend()</button>
+	<span id="mes5" style="display: none; font-size: 14px">
+		додаю функцію redButtons() до бібліотеки jQuery
+	</span>
+	<br>
+<br>
+	<button id="globalEval" >.globalEval()</button>
+	<span id="mes6" style="display: none; font-size: 14px">
+		Оголошую глобальну змінну і виводжу її на екран
+	</span>
+	<br>
+<br>
+	<button id="grep" >.grep()</button>
+	<span id="mes7" style="display: none; font-size: 14px">
+		Вибираю елементи масиву яку більші за 10
+	</span>
+	<br>
+<br>
+	<button id="inArray" >.inArray()</button>
+	<span id="mes8" style="display: none; font-size: 14px">
+		 Пошук числа в масиві
+	</span>
+	<br>
+<br>
+	<button id="isArray" >.isArray()</button>
+	<span id="mes9" style="display: none; font-size: 14px">
+		 Перевірка чи отримане значення є масивом
+	</span>
+	<br>
+<br>
+	<button id="isEmptyObject" >.isEmptyObject()</button>
+	<span id="mes10" style="display: none; font-size: 14px">
+		 Перевірка чи отримане значення є порожнім обєктом
+	</span>
+	<br>
+<br>
+	<button id="isNumeric" >.isNumeric()</button>
+	<span id="mes11" style="display: none; font-size: 14px">
+		 Перевірка чи отримане значення є числом
+	</span>
+	<br>
+<br>
+	<button id="isPlainObject" >.isPlainObject()</button>
+	<span id="mes12" style="display: none; font-size: 14px">
+		 Перевірка чи отримане значення є простим обєктом
+	</span>
+	<br>
+<br>
+	<button id="makeArray" >.makeArray()</button>
+	<span id="mes13" style="display: none; font-size: 14px">
+		 Перетворення значень всіх елементів "li" в масив і запис зворотньому порядку
+	</span>
+	<ul id="ul">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	<br>
+<br>
+	<button id="marge" >.marge()</button>
+	<span id="mes14" style="display: none; font-size: 14px">
+		Об'єднує два масива
+	</span>
+	<br>
+<br>
+	<button id="noop" >.noop()</button>
+	<span id="mes15" style="display: none; font-size: 14px">
+		Повертає порожню функцію
+	</span>
+	<br>
+<br>
+	<button id="now" >.now()</button>
+	<span id="mes16" style="display: none; font-size: 14px">
+		Повертає час в мілісекундах
+	</span>
+	<br>
+<br>
+	<button id="parseHTML" >.parseHTML()</button>
+	<span id="mes17" style="display: none; font-size: 14px">
+		Перетворює рядок в елемент DOM
+	</span>
+	<ul id="parseH">	</ul>
+	<br>
+<br>
+	<button id="parseXML" >.parseXML()</button>
+	<span id="mes18" style="display: none; font-size: 14px">
+		Перетворює рядок xml код
+	</span>
+	<div id="parseX"></div>
+	<br>
+<br>
+	<button id="trim" >.trim()</button>
+	<span id="mes19" style="display: none; font-size: 14px">
+		Видаляє пробіли з початку і кінця рядку
+	</span>
+	<p>Введіть текст з пробілами на початку і на кінці</p>
+	<input type="text" id="trimText">
+	<br>
+<br>
+	<button id="type" >.type()</button>
+	<span id="mes20" style="display: none; font-size: 14px">
+		Визначає тип даних
+	</span>
+	<br>
+	<input type="text" id="typeText" style="width: 30%">
+	<br>
+<br>
+</body>
+</html>

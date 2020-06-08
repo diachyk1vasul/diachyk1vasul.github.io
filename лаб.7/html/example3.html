@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 3</title>
+  <script type = "text/javascript" src = "jquery-3.4.1_1.js"> </script>
+  <script>$ (document).ready(function() { 
+ $("#a").bind("click", function(){
+  $("#im").show();
+  });
+
+ $("#im").bind("click", function(){
+  $("#im").hide();
+
+  });
+
+$( "#im" ).mouseout(function() {
+   $("dialog").hide();
+  })
+
+$( "#im" ).mouseover(function() {
+   $("dialog").show();
+  })
+
+})
+</script>
+</head>
+<body>
+  <div id="a">Показати зображення</div>
+  <div><img src="прапор1.jpg" id="im" title="Це вспливаюча підказка!" style="display: none;"> </div>
+  <dialog>Держа́вний пра́пор Украї́ни — сучасний прапор України, стяг із двох
+     рівновеликих горизонтальних смуг синього і жовтого кольорів. Співвідношення ширини прапора до його довжини.
+    Жовтий (золотий) і синій кольори використовувалися на гербі
+     Руського королівства XIV століття. Вони також вживалися на гербах
+     руських земель, князів, шляхти і міст середньовіччя і раннього нового часу.
+</body>
+</html>

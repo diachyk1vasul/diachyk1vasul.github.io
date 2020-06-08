@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html lang="en">
+<html>  
+<head>  
+<script type="text/javascript" src="jquery-3.4.1.js"></script> 
+<script>  
+$(document).ready(function(){  
+    $("#btn1").click(function(){  
+        $("ol").append(" <li><b>Нові дерева</b></li>  ");  
+    });  
+    $("#btn2").click(function(){  
+        $("ol").append($("li").clone());  
+    });  
+    $("#btn3").click(function(){  
+        alert($("ol").width());  
+    }); 
+    $("#btn4").click(function(){  
+        alert($("ol").outerWidth());  
+    }); 
+});  
+</script>  
+</head>  
+<body>  
+ 
+<ol>  
+  <li>Яблуня</li>  
+  <li>Груша</li>  
+  <li>Слива</li>  
+</ol>  
+<button id="btn1">Append text</button>  
+<button id="btn2">Clone item</button> 
+<br>
+<br>
+<button id="btn3">Print Width</button> 
+<button id="btn4">Print OuterWidth</button>  
+</body>  
+</html>  

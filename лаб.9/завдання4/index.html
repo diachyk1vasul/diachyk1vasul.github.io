@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<script>
+	$( document ).ready(function(){
+		$("#filter").click(function(){
+			$("*").filter(".modified").append(" modified").css("background-color", "#red")
+			
+			$("li").filter(function(index){
+				if (index%3==0) {$(this).append(" modified").css("background-color", "red")}
+			})
+		})
+	});
+		</script>
+	</head>
+	<body>
+		<button id="filter">.filter()</button>
+		<br>
+		<p class="modified">Тестовий елемент</p>
+		<h4 class="modified">Текстовий елемент</h4>
+		<h4>Текстовий елемент</h4>
+		<h4 class="modified">Текстовий елемент</h4>
+		<ul>
+			<h3><li>Елемент списку</li>
+			<li>Елемент списку</li>
+			<li>Елемент списку</li></h3>
+		</ul>
+		<ul>
+			<li>Елемент списку</li>
+			<li>Елемент списку</li>
+			<li>Елемент списку</li>
+		</ul>
+	</body>
+</html>

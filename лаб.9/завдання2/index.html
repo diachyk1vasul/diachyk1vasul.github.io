@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		console.profile("someData")
+		console.time()
+		console.info("Інформаційне повідомлення")
+		console.warn("Попередження")
+		console.error("Повідомлення про помилку")
+		console.log("Приклад виведення JavaScript об'єкту")
+		person = {name: "test", age : 20, "inner" : {id : 0, name : "a"}}
+		console.dir(document.getElementsByTagName('h3'))
+		console.dirxml(document.getElementsByTagName('h3'))
+		console.log("Пройшло часу з початку виконання скрипта:")
+		console.timeEnd()
+		console.profileEnd("someData")
+		console.assert(document.getElementById("demo"), "You have no element with ID 'demo'"); 
+	</script>
+	<h2>Робота методів:</h2>
+	<p>console.info();<br> console.warn();<br>
+	 console.error();<br> console.dir();<br> console.dirxml();<br>
+	 console.time();<br> console.timeEnd();
+	 console.profile();<br> console.profileEnd();<br>
+	console.assert()
+	</p>
+</body>
+</html>
